@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HomeWork9_10</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jcarousel.data-attributes.css">
+  <link rel="stylesheet" href="css/jquery.selectstyler.css">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="jQuery/jquery-3.1.0.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="js/jcarousel.data-attributes.js"></script>
+  <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+  <script src="js/jquery.selectstyler.js"></script>
+
+  <script src="js/sqript.js"></script> 
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <h1>Карусель</h1>
+    <div class="jcarousel-wrapper">
+      <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+        <ul>
+          <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+          <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+        </ul>
+      </div>
+
+      <p class="photo-credits">
+         Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+      </p>
+
+      <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+      <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+    </div>
+ 
+
+
+    <h3> Стилизация select при помощи jquery-плагина </h3>
+    <select>
+      <option>-- Выберите --</option>
+        <optgroup label="Группа 1">
+	  <option>Пункт 1.1</option>
+          <option>Пункт 1.2</option>
+	  <option>Пункт 1.3</option>
+	</optgroup>
+	<optgroup label="Группа 2">
+	  <option>Пункт 2.1</option>
+	  <option disabled>Пункт 2.2</option>
+	  <option>Пункт 2.3</option>
+	</optgroup>
+    </select>
+
+ </div>
+
+
+
+  <div class="checkbox-wrapper">
+    <h3> Стилизация чекбокс при помощи jquery </h3>
+
+    <form action="#">
+      <label class="chkbox">  
+        <span>label 1 </span>
+        <input type="checkbox" class="niceCheck" id="check1" tabindex="1">
+      </label> 
+      <label class="chkbox">  
+        <span>label 2 </span>
+        <input type="checkbox" class="niceCheck" id="check2" checked tabindex="2"></span>
+      </label> 
+      <label class="chkbox">  
+        <span>label 3 </span>
+        <input type="checkbox" class="niceCheck" id="check3" checked disabled ></span>
+      </label> 
+    </form>
+  </div>
+
+
+
+
+  <div class="checkbox-wrapper">
+    <h3> Стилизация чекбокс при помощи css </h3>
+
+    <form action="#">
+      <input type="checkbox" class="chkbox-css" id="check4">
+      <label class="chkbox label-css" for="check4">label 1</label> 
+
+      <input type="checkbox" class="chkbox-css" id="check5" checked="checked">
+      <label class="chkbox label-css" for="check5">label 2</label> 
+
+      <input type="checkbox" class="chkbox-css" id="check6" checked="checked" disabled>
+      <label class="chkbox label-css" for="check6">label 3</label> 
+    </form>
+  </div>
+
+
+
+
+
+
+    <ul class="menu">
+      <li class="menu__li">Nav 1</li>
+      <li class="menu__li">Nav 2</li>
+      <li class="menu__li">Nav 3<span class="triangle-down"></span>
+        <ul class="subMenu">
+          <li>Nav 3.1</li>
+          <li>Nav 3.2</li>
+          <li>Nav 3.3</li>
+          <li>Nav 3.4<span class="triangle-down triangle-right"></span>
+            <ul class="subMenu">
+              <li>Nav 3.4.1</li>
+              <li>Nav 3.4.2<span class="triangle-down triangle-right"></span>
+                <ul class="subMenu">
+                  <li>Nav 3.4.2.1</li>
+                  <li>Nav 3.4.2.2</li>
+                  <li>Nav 3.4.2.3</li>
+                  <li>Nav 3.4.2.4</li>
+                  <li>Nav 3.4.2.5</li>
+                </ul>
+              </li>
+              <li>Nav 3.4.3</li>
+              <li>Nav 3.4.4</li>
+              <li>Nav 3.4.5</li>
+            </ul>
+          </li>
+          <li>Nav 3.5</li>
+        </ul>
+      </li>
+      <li class="menu__li">Nav 4</li>
+      <li class="menu__li">Nav 5</li>
+    </ul>
+
+ 
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.menu {
+  list-style: none;
+  background-color: #f66;
+  margin: 50px 0 300px;
+  padding: 0 150px;
+}
+
+.menu__li {
+  display: inline-block;
+  padding: 15px;
+  color: #fff;
+  position: relative;
+}
+
+.menu__li:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.subMenu {
+  list-style: none;
+  background-color: #ff5050;
+  border-radius: 2px;
+  display: none;
+  position: absolute;
+  width: 180px;
+  top: 40px;
+  left: 0;
+}
+
+.subMenu li .subMenu {
+  top: 0;
+  left: 100%;
+}
+
+.subMenu li {
+  border-bottom: 1px solid #f43;
+  display: block;
+  color: #fff;
+  padding: 8px;
+  margin: 0 3px;
+  position: relative; 
+}
+
+.subMenu li:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;  
+  border-top: 6px solid white;
+  display: inline-block;
+}
+
+.triangle-right {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;  
+  border-left: 6px solid white;
+}
+
+
+
+select {
+  display: block;
+  margin: 20px auto;
+}
+
+
+.checkbox-wrapper {
+  margin: 30px 20px;
+  background-color: #9cf;
+  padding: 10px 50px;
+}
+
+.chkbox {
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.niceCheck, .niceCheckDisabled {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox_sprite.png);
+  overflow: hidden;
+}
+
+.niceChecked {
+  background-position: 0 -17px;
+}
+
+.niceCheck input{
+  margin-left: -100px;
+}
+
+.niceCheckDisabled {
+   background-position: 0 -51px;;
+}
+
+.chkbox-css {
+  display: none;
+}
+
+.chkbox-css + .label-css {
+  cursor: pointer;
+  padding-left: 0;
+}
+
+.label-css:after, .chkbox-css:disabled + .label-css:after {
+  content: "";
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  margin: 0 0 0 5px;
+  background: url(../img/checkbox_sprite.png);
+  vertical-align: bottom;
+}
+
+.chkbox-css:checked + .label-css:after{
+  background-position: 0 -17px;
+}
+
+.chkbox-css:disabled + .label-css:after {
+  background-position: 0 -34px;
+}
+
+.chkbox-css:checked:disabled + .label-css:after {
+  background-position: 0 -51px;
+}
